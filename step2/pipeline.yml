@@ -1,0 +1,15 @@
+---
+resources:
+- name: hello
+  type: git
+  source:
+    uri: https://github.com/jacopen/concourse-workshop.git
+
+jobs:
+- name: hello-job
+  public: true
+  plan:
+  - get: hello
+    trigger: true
+  - task: run-hello
+    file: hello/step2/hello.yml
