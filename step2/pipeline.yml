@@ -12,4 +12,4 @@ jobs:
   - get: hello
     trigger: true
   - task: run-hello
-    file: hello/step2/hello.yml
+    file: hello/step2/task.yml
