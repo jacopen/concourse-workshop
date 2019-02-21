@@ -5,6 +5,6 @@ image_resource:
   source:
     repository: getourneau/alpine-bash-git
 inputs:
-  - name: workshop-repo
+  - name: hello
 run:
-  path: ./workshop-repo/step2/hello.sh
+  path: ./hello/step2/hello.sh
